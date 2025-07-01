@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AJAMZBOX | Freelance Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>AJAMZBOX</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+  </header>
+
+  <section class="hero">
+    <h2>Building clean, fast websites for your business.</h2>
+    <p>Freelance Web Developer | HTML • CSS • JavaScript</p>
+  </section>
+
+  <section id="services">
+    <h3>What I Do</h3>
+    <ul>
+      <li>🔧 Custom Website Development</li>
+      <li>📱 Responsive Design</li>
+      <li>🚀 Performance Optimization</li>
+      <li>🛒 E-commerce Setup</li>
+    </ul>
+  </section>
+
+  <section id="portfolio">
+    <h3>My Work</h3>
+    <div class="project-grid">
+      <div class="project-card">
+        <h4>Blog Project</h4>
+        <p>Simple blog using HTML/CSS/JS</p>
+        <a href="https://github.com/ajamzbox001/blog-project" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h3>Client Testimonials</h3>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <p>"AJAMZBOX built us a beautiful site that loads fast and looks perfect on all devices. Highly recommend!"</p>
+        <strong>— Sarah L., Boutique Owner</strong>
+      </div>
+      <div class="testimonial-card">
+        <p>"Vivien delivered our e-commerce site ahead of schedule. The design was clean, and sales improved by 30%!"</p>
+        <strong>— Marcus R., T-Shirt Shop</strong>
+      </div>
+      <div class="testimonial-card">
+        <p>"Professional, responsive, and creative. I’ll definitely hire AJAMZBOX again for future projects."</p>
+        <strong>— Anita P., Digital Artist</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3>Let's Work Together</h3>
+    <p>Email: <a href="mailto:ajamzbox@gmail.com">ajamzbox@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/vivienvanijankul/" target="_blank">Vivien Vanijankul</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 AJAMZBOX</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>
